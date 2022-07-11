@@ -7,7 +7,7 @@
 
 
 :root{
-    --main-color:#16161a;
+    --main-color:#6242e2;
     --body-color: #e7e7e7;
     --heading-color: #312f2f;
     --box-color: #a1a1a193;
@@ -78,7 +78,6 @@ section.home img {
     height: 150px;
     border-radius: 100%;
     object-fit: cover;
-    border: 10px solid var(--box-color);
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -121,8 +120,132 @@ section.home ul li a:hover {
     color: #302a3a;
 }
 
+section  .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
 
 
+.skills {
+    margin: 6%;
+    background: var(--body-color);
+}
+
+.skills .title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .title span {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.skills .title span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+}
+
+.skills .content {
+    padding: 40px 0;
+}
+
+.skills .skills-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skills-details .text{
+    width: 50%;
+  }
+
+.skills-details p {
+    color: #6c6e6f;
+    text-align: justify;
+}
+
+.skills .skills-details .boxes {
+    width: 45%;
+}
+
+.skills .skills-details .skills-img{
+    display: flex;
+    margin: 4%;
+    width: 230px;
+    height: 230px;
+}
+.skills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box{
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0;
+}
+.skills-details .boxes .topic{
+    font-size: 20px;
+    color: #6242e2;
+}
+.skills-details .boxes .per{
+    font-size: 50px;
+    color: #6242e2;
+}
+
+
+footer{
+    background: #6242e2;
+    text-align: center;
+    padding-left: 15px 0;
+}
+
+footer .text span {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer .text span a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--body-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+  }
+
+
+
+
+
+
+
+
+
+/* Responsive */
 
 @media only screen and (max-width: 630px) {
     header nav {

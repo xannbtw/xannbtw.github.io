@@ -128,23 +128,23 @@ section  .topic{
   }
 
 
-section.skills {
+.skills {
     margin: 6%;
     background: var(--body-color);
 }
 
-section.skills .title {
+.skills .title {
     display: flex;
     justify-content: center;
 }
 
-section.skills .title span {
+.skills .title span {
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 8px;
 }
 
-section.skills .title span::before {
+.skills .title span::before {
     content: '';
     position: absolute;
     left: 0;
@@ -153,47 +153,47 @@ section.skills .title span::before {
     width: 100%;
 }
 
-section.skills .content {
+.skills .content {
     padding: 40px 0;
 }
 
-section.skills .skills-details {
+.skills .skills-details {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-section.skills-details .text{
+.skills-details .text{
     width: 50%;
   }
 
-section.skills-details p {
+.skills-details p {
     color: #6c6e6f;
     text-align: justify;
 }
 
-section.skills .skills-details .boxes {
+.skills .skills-details .boxes {
     width: 45%;
 }
 
-section.skills .skills-details .skills-img{
+.skills .skills-details .skills-img{
     display: flex;
     margin: 4%;
     width: 230px;
     height: 230px;
 }
-section.skills-details .boxes{
+.skills-details .boxes{
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-section.skills-details .box{
+.skills-details .box{
     width: calc(100% / 2 - 20px);
     margin: 20px 0;
 }
-section.skills-details .boxes .topic{
+.skills-details .boxes .topic{
     font-size: 20px;
     color: #6242e2;
 }

@@ -120,46 +120,6 @@ section.home ul li a:hover {
     color: #302a3a;
 }
 
-footer{
-    background: #6242e2;
-    text-align: center;
-    padding-left: 15px 0;
-}
-
-footer .text span {
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-footer .text span a{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-
-
-/* Scroll */
-
-::-webkit-scrollbar {
-    width: 9px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: var(--body-color);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-  }
-
-
-
-
-
-
-
 
 
 /* Responsive */

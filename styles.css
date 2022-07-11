@@ -6,7 +6,264 @@
 }
 
 
-h1 {
+:root{
+    --main-color:#6242e2;
+    --body-color: #e7e7e7;
+    --heading-color: #312f2f;
+    --box-color: #a1a1a193;
+    --bg-color: #000000;
+}
+
+
+
+body {
+    color: var(--bg-color);
+    background: var(--body-color);
+    font-family: "Poppins", sans-serif;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    animation: fadeInDown .8s;
+}
+
+header nav .header-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header nav .header-links ul li, section.home ul li {
+    list-style-type: none;
+}
+
+header nav .header-links ul li a {
+    outline: none;
+    text-decoration: none;
+    color: var(--heading-color);
+    padding: 5px 12px;
+    transition: 0.3s all;
+    font-size: 15px;
+}
+
+header nav .header-links ul li a:hover {
+    color: #6242e2;
+}
+
+header nav .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid var(--box-color);
+    cursor: pointer;
+}
+
+section.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size:30px;
+    min-height: 70vh;
+    animation: fadeInUp .8s;
+}
+
+section.home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+section.home span {
+    color: var(--bg-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section.home p {
+    position: relative;
+    top: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #6c6e6f;
+    font-size: 13px;
+}
+
+section.home ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.home ul li a {
+    color: #6242e2;
+    display: flex;
+    text-decoration: none;
+    margin: 20px 5px;
+    font-size: 25px;
+    padding: 5px;
+    transition: 0.2s all;
+}
+
+section.home ul li a:hover {
+    transition: 0.2s all;
+    color: #302a3a;
+}
+
+section  .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+
+.skills {
+    margin: 6%;
+    background: var(--body-color);
+}
+
+.skills .title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .title span {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.skills .title span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+}
+
+.skills .content {
+    padding: 40px 0;
+}
+
+.skills .skills-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skills-details .text{
+    width: 50%;
+  }
+
+.skills-details p {
+    color: #6c6e6f;
+    text-align: justify;
+}
+
+.skills .skills-details .boxes {
+    width: 45%;
+}
+
+.skills .skills-details .skills-img{
+    display: flex;
+    margin: 4%;
+    width: 230px;
+    height: 230px;
+}
+.skills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box{
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0;
+}
+.skills-details .boxes .topic{
+    font-size: 20px;
+    color: #6242e2;
+}
+.skills-details .boxes .per{
+    font-size: 50px;
+    color: #6242e2;
+}
+
+
+footer{
+    background: #6242e2;
+    text-align: center;
+    padding-left: 15px 0;
+}
+
+footer .text span {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer .text span a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--body-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+  }
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 630px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav .logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header nav .header-links ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

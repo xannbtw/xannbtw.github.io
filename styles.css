@@ -8,11 +8,10 @@
 
 :root{
     --main-color:#16161a;
-    --body-color: #131010;
-    --heading-color: #a6a8b8;
+    --body-color: #e7e7e7;
+    --heading-color: #312f2f;
     --box-color: #a1a1a193;
-    --bg-color: #fff;
-
+    --bg-color: #000000;
 }
 
 
@@ -52,7 +51,7 @@ header nav .header-links ul li a {
 }
 
 header nav .header-links ul li a:hover {
-    color: var(--bg-color);
+    color: #6242e2;
 }
 
 header nav .logo img {
@@ -95,7 +94,7 @@ section.home p {
     top: 50%;
     white-space: nowrap;
     overflow: hidden;
-    color: #94a1b2;
+    color: #6c6e6f;
     font-size: 13px;
 }
 
@@ -108,7 +107,7 @@ section.home ul {
 }
 
 section.home ul li a {
-    color: #a6a8b8;
+    color: #6242e2;
     display: flex;
     text-decoration: none;
     margin: 20px 5px;
@@ -119,8 +118,9 @@ section.home ul li a {
 
 section.home ul li a:hover {
     transition: 0.2s all;
-    color: #fff;
+    color: #302a3a;
 }
+
 
 
 

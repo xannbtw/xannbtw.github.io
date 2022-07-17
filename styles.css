@@ -8,10 +8,11 @@
 
 :root{
     --main-color:#6242e2;
-    --body-color: #e7e7e7;
+    --body-color: #131010;
     --heading-color: #312f2f;
     --box-color: #a1a1a193;
-    --bg-color: #000000;
+    --bg-color: #fff;
+    --nav-color: #a6a8b8;
 }
 
 
@@ -44,7 +45,7 @@ header nav .header-links ul li, section.home ul li {
 header nav .header-links ul li a {
     outline: none;
     text-decoration: none;
-    color: var(--heading-color);
+    color: var(--nav-color);
     padding: 5px 12px;
     transition: 0.3s all;
     font-size: 15px;
@@ -117,11 +118,11 @@ section.home ul li a {
 
 section.home ul li a:hover {
     transition: 0.2s all;
-    color: #302a3a;
+    color: var(--bg-color);
 }
 
 section  .topic{
-    color: #0E2431;
+    color: #fff;
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -169,7 +170,7 @@ section  .topic{
   }
 
 .skills-details p {
-    color: #6c6e6f;
+    color: #bcbcbc;
     text-align: justify;
 }
 
